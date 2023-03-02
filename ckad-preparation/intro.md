@@ -6,8 +6,6 @@ No te preocupes si te encuentras con desafíos difíciles en el camino. Este exa
 
 ## Detalle de la práctica
 
-El curso completo contiene 22 preguntas y escenarios que cubren todas las áreas de CKAD. El curso también proporciona una terminal de navegador que es una réplica muy cercana de la original. Esto es excelente para acostumbrarse y sentirse cómodo antes del examen real. Después de la sesión de prueba (120 minutos), o si la detiene antes, tendrá acceso a todas las preguntas y sus soluciones detalladas.
-
 El siguiente avance le dará una idea de lo que proporcionará el curso completo. Estas preguntas de avance no forman parte de las 22 del curso completo, sino que se agregan adicionalmente. Pero las preguntas de avance forman parte del mismo entorno de simulación CKAD que hemos configurado para usted, por lo que con acceso al curso completo también puede resolverlas.
 
 Enlace de la certificación oficial https://www.cncf.io/certification/ckad/
