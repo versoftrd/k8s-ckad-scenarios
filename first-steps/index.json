@@ -1,6 +1,6 @@
 {
-  "title": "First Steps To Becoming Certified Kubernetes Application Developer",
-  "description": "Learn the foundations of Kubernetes in one short scenario",
+  "title": "Práctica básica de Kubernetes para BHD",
+  "description": "Aprende comandos básicos para interactuar con un cluster de Kubernetes",
   "difficulty": "Beginner",
   "icon": "fa-kubernetes",
   "time": "30-60 minutes",
