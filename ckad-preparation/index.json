@@ -1,0 +1,33 @@
+{
+  "title": "Preparación CKA - BHD/Integración",
+  "description": "Ejercicios prácticos para certificación como desarrollador de Kubernetes",
+  "difficulty": "Intermediate",
+  "details": {
+    "steps": [
+      {
+        "title": "Question 1 | Pods",
+        "text": "step1.md",
+        "background": "background-init.sh",
+        "answer": "step1-answer.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deploy-initial-objects.yaml",
+          "target": "/opt/deploy-initial-objects.yaml"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
