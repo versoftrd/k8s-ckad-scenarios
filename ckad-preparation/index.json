@@ -1,12 +1,12 @@
 {
-  "title": "Preparación CKA - BHD/Integración",
+  "title": "Preparación CKAD - BHD/Integración",
   "description": "Ejercicios prácticos para certificación como desarrollador de Kubernetes",
   "difficulty": "Intermediate",
   "details": {
     "steps": [
       {
         "title": "Question 1 | Pods",
-        "text": "step1.md",
+        "text": "step1/step1.md",
         "background": "step1/background-init.sh",
         "answer": "step1-answer.md",
         "verify": "step1/verify.sh"
