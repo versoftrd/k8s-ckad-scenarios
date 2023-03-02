@@ -9,8 +9,8 @@
       {
         "title": "Step 1 - Running Cluster",
         "text": "step1.md",
-        "courseData": "background-init.sh",
-        "code": "foreground-init.sh",
+        "background": "background-init.sh",
+        "foreground": "foreground-init.sh",
         "answer": "step1-answer.md"
       },
       {
