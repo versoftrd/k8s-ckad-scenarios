@@ -40,7 +40,7 @@
       {
         "title": "Step 6 - Create Namespace",
         "text": "step5.md",
-	"answer": "step5-answer.md"
+        "answer": "step5-answer.md"
       },
       {
         "title": "Step 7 - Scaling",
@@ -90,15 +90,18 @@
       "text": "finish.md"
     },
     "assets": {
-        "host01": [
-            {"file": "deploy-metricsserver.yaml", "target": "/opt/deploy-metricsserver.yaml"}
-        ]
+      "host01": [
+        {
+          "file": "deploy-metricsserver.yaml",
+          "target": "/opt/deploy-metricsserver.yaml"
+        }
+      ]
     }
   },
   "environment": {
     "uilayout": "tips-terminal"
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }
