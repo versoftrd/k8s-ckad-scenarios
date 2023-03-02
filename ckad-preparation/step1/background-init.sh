@@ -1,4 +1,4 @@
 # Crear folders o archivos
-mkdir /opt/course/2
+mkdir -p /opt/course/2
 
 # Ejecutar scripts iniciales
