@@ -1,1 +1,0 @@
-kubectl apply -f /opt/deploy-metricsserver.yaml
