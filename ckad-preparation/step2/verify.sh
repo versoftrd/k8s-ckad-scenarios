@@ -14,7 +14,7 @@ else
 
     # Notificar al server resultado
     archivo=$(cat /opt/course/team/equipo.txt)
-    json="{\"team\":\"$archivo\", \"question\":1, \"result\":\"success\"}"
+    json="{\"team\":\"$archivo\", \"question\":2, \"result\":\"success\"}"
     curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 fi
 
