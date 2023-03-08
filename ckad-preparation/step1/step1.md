@@ -1,5 +1,4 @@
-> Pods creation and status
+El equipo de DevOps de BHD desea obtener la lista de todos los Namespaces en el clúster. Obtenga la lista y guárdela en `/opt/course/1/namespaces.txt`.
 
-Create a single Pod of image `httpd:2.4.41-alpine` in Namespace `default`. The Pod should be named `pod1` and the container should be named `pod1-container`.
-
-Your manager would like to run a command manually on occasion to output the status of that exact Pod. Please write a command that does this into `/opt/course/2/pod1-status-command.sh`. The command should use `kubectl`.
+> Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
+> `sh /opt/course/skip.sh pregunta1`{{exec}}
