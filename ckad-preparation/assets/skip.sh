@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ "$#" -ne 1 ]; then
-    echo "Error: se debe proporcionar un nombre de archivo como parámetro."
+    echo "Error: se debe proporcionar la pregunta (formato pregunta#) como parámetro."
     exit 1
 fi
 
@@ -10,4 +10,4 @@ filepath="/opt/course/skips/$filename.txt"
 
 touch "$filepath"
 
-echo "Archivo $filename.txt creado en la ruta /opt/course/skips/."
+echo "Se ha saltado la $filename. Puedes continuar con las demás. Confíen en ustedes y éxitos!"
