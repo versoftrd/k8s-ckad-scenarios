@@ -8,4 +8,4 @@ Cree el despliegue y guarde su archivo yaml en `/opt/course/06/holy-api-deployme
 
 
 > Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
-> `sh /opt/course/skip.sh pregunta1`{{exec}}
+> `sh /opt/course/skip.sh pregunta6`{{exec}}
