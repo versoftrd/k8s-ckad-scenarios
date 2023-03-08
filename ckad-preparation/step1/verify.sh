@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
-kubectl describe pod pod1 -n default | grep pod1-container;
-sh /opt/course/2/pod1-status-command.sh;
+if [ -f /opt/course/skips/pregunta1.txt ]; then
+    echo "Ejecución correcta."
+else
+    if [ ! -f /opt/course/1/namespaces.txt ]; then
+        echo "Error: no existe el archivo /opt/course/1/namespaces.txt."
+        exit 1
+    fi
+    echo "Ejecución correcta."
+fi

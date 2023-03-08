@@ -1,25 +1,32 @@
 {
-  "title": "Preparación CKAD - BHD/Integración",
-  "description": "Ejercicios prácticos para certificación como desarrollador de Kubernetes",
+  "title": "Práctica de Integración @BHD",
+  "description": "Ejercicios prácticos de Kubernetes",
   "details": {
     "steps": [
       {
-        "title": "Question 1 | Pods",
+        "title": "Registrar equipo",
+        "text": "register/register.md",
+        "answer": "register-answer.md",
+        "verify": "register/verify.sh"
+      },
+      {
+        "title": "Pregunta1 | Namespaces",
         "text": "step1/step1.md",
         "background": "step1/background-init.sh",
         "answer": "step1-answer.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Question 2 | Pods",
-        "text": "step2/step1.md",
+        "title": "Pregunta2 | Pods",
+        "text": "step2/step2.md",
         "background": "step2/background-init.sh",
         "answer": "step2-answer.md",
         "verify": "step2/verify.sh"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "bg-scripts/init.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -29,6 +36,10 @@
         {
           "file": "deploy-initial-objects.yaml",
           "target": "/opt/deploy-initial-objects.yaml"
+        },
+        {
+          "file": "skip.sh",
+          "target": "/opt/course/skip.sh"
         }
       ]
     }
