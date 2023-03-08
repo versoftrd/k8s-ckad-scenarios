@@ -35,7 +35,14 @@
         "background": "step7/background-init.sh",
         "answer": "step7-answer.md",
         "verify": "step7/verify.sh"
-      }     
+      },
+      {
+        "title": "Pregunta 15 | ConfigMap, Configmap-Volume",
+        "text": "step15/step15.md",
+        "background": "step15/background-init.sh",
+        "answer": "step15-answer.md",
+        "verify": "step15/verify.sh"
+      }
     ],
     "intro": {
       "text": "intro.md",
