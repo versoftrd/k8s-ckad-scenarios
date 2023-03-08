@@ -53,6 +53,10 @@
         {
           "file": "skip.sh",
           "target": "/opt/course/"
+        },
+        {
+          "file": "holy-api-pod.yaml",
+          "target": "/opt/course/06/"
         }
       ]
     }

@@ -3,6 +3,7 @@
 # Crear foldes o archivos
 mkdir -p /opt/course/team/
 mkdir -p /opt/course/skips/
+mkdir -p /opt/course/06/
 
 # Crear namespaces
 kubectl create namespace mbp
