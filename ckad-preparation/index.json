@@ -12,7 +12,6 @@
       {
         "title": "Pregunta1 | Namespaces",
         "text": "step1/step1.md",
-        "background": "step1/background-init.sh",
         "answer": "step1-answer.md",
         "verify": "step1/verify.sh"
       },
