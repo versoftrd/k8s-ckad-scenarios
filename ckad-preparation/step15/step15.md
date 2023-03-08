@@ -1,3 +1,4 @@
-El líder de capítulo tiene un servidor nginx en un deployment llamado "web-moon" en el namespace moon. Alguien comenzó a configurarlo pero nunca se completó. Para completarlo, favor crear un ConfigMap llamado "configmap-web-moon-html" que contiene el contenido del archivo /opt/course/15/web-moon.html bajo el nombre del key-name "índex.html". El deployment "web-moon" ya está configurado para trabajar con este ConfigMap y servir su contenido. Pruebe el escenario utilizando un curl desde un pod temporal con la imagen nginx:alpine
+El l&iacute;der de cap&iacute;tulo tiene un servidor nginx en un deployment llamado "web-moon" en el namespace moon. Alguien comenz&oacute; a configurarlo pero nunca se complet&oacute;. Para completarlo, favor crear un ConfigMap llamado "configmap-web-moon-html" que contiene el contenido del archivo /opt/course/web-moon.html bajo el nombre del key-name "índex.html". El deployment "web-moon" ya está configurado para trabajar con este ConfigMap y servir su contenido. Pruebe el escenario utilizando un curl desde un pod temporal con la imagen nginx:alpine
 
-Skip Para saltar ejecutar el comando: sh /opt/course/skip.sh pregunta3{{exec}}
+> Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
+> `sh /opt/course/skip.sh pregunta15`{{exec}}
