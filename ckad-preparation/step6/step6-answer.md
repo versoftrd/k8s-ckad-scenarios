@@ -1,15 +1,15 @@
-Answer
+Respuesta
 
-There are multiple ways to do this, one is to copy an Deployment example from https://kubernetes.io/docs and then merge it with the existing
-Pod yaml. That's what we will do now:
+Hay varias maneras de hacer esto, uno es copiar un ejemplo de implementación de https://kubernetes.io/docs y luego fusionarlo con el existente
+Pod yaml existente. Eso es lo que haremos ahora:
 
 ```
-cp /opt/course/holy-api-pod.yaml /opt/course/9/holy-api-deployment.yaml # make a copy!
+cp /opt/course/06/holy-api-pod.yaml /opt/course/06/holy-api-deployment.yaml # make a copy!
 
-vim /opt/course/holy-api-deployment.yaml
+vim /opt/course/06/holy-api-deployment.yaml
 ```
 
-Now copy/use a Deployment example yaml and put the Pod's metadata: and spec: into the Deployment's template: section:
+Ahora copie/utilice un Deployment ejemplo yaml y ponga los metadatos del Pod: y spec: en la sección template: del Deployment:
 
 ```yaml
 ---
@@ -58,11 +58,11 @@ spec:
         name: cache-volume3
 ```
 
-Next create the new Deployment:
+A continuación, cree el nuevo despliegue:
 
-` kubectl -f /opt/course/holy-api-deployment.yaml create `
+` kubectl -f /opt/course/06/holy-api-deployment.yaml create `
 
-Finally delete the single Pod:
+Por último, elimine el Pod individual:
 
 ` kubectl -n pluto delete pod holy-api --force --grace-period=0 `
 
