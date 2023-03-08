@@ -9,3 +9,5 @@ Please create the Deployment and save its yaml under
 `opt/course/holy-api-deployment.yaml`
 
 
+> Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
+> `sh /opt/course/skip.sh pregunta1`{{exec}}

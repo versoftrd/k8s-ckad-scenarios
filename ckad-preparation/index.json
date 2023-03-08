@@ -21,7 +21,21 @@
         "background": "step2/background-init.sh",
         "answer": "step2-answer.md",
         "verify": "step2/verify.sh"
-      }
+      },
+      {
+        "title": "Pregunta6 | Pods",
+        "text": "step6/step6.md",
+        "background": "step6/background-init.sh",
+        "answer": "step6-answer.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "Pregunta7 | Pods",
+        "text": "step7/step7.md",
+        "background": "step7/background-init.sh",
+        "answer": "step7-answer.md",
+        "verify": "step7/verify.sh"
+      }     
     ],
     "intro": {
       "text": "intro.md",
