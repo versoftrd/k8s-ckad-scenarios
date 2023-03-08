@@ -68,6 +68,14 @@
         {
           "file": "secret-handler.yaml",
           "target": "/opt/course/"
+        },
+        {
+          "file": "web-moon.html",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "webmoon.yaml",
+          "target": "/opt/course/"
         }
       ]
     }
