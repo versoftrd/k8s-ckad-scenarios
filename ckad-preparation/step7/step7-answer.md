@@ -8,7 +8,7 @@ k -n moon create secret generic secret1 --from-literal user=test --from-literal 
 
 ```
 
-The last command would generate this yaml:
+El último comando generaría este yaml:
 
 ```yaml
 apiVersion: v1 
@@ -23,18 +23,18 @@ data:
 
 ```
 
-Next we create the second Secret from the given location, making sure it'll be created in Namespace `moon`
+A continuación creamos el segundo Secret desde la ubicación dada, asegurándonos de que se creará en el Namespace `moon
 
 ` kubectl -n moon -f /opt/course/secret2.yaml create`
 
-We will now edit the Pod yaml
+Ahora editaremos el Pod yaml
 
 ```
 cp /opt/course/secret-handler.yaml /opt/course/secret-handler-new.yaml
 vim /opt/course/secret-handler-new.yaml
 ```
 
-Add the following to the yaml:
+Añade lo siguiente al yaml:
 
 ```yaml
 
@@ -92,7 +92,7 @@ spec:
 ```
 
 
-There is also the possibility to import all keys from a Secret as env variables at once, though the env variable names will then be the same as in the Secret, which doesn't work for the requirements here:
+También existe la posibilidad de importar todas las claves de un Secreto como variables env a la vez, aunque los nombres de las variables env serán entonces los mismos que en el Secreto, lo que no funciona para los requisitos aquí planteados:
 
 ```yaml
     containers:
@@ -103,17 +103,17 @@ There is also the possibility to import all keys from a Secret as env variables 
         name: secret1
 ```
 
-Then we apply the changes:
+A continuación, aplicamos los cambios:
 ```
 k -f /opt/course/secret-handler.yaml delete --force --grace-period=0
 k -f /opt/course/secret-handler-new.yaml create
 ```
 
-Instead of running delete and create we can also use recreate:
+En lugar de ejecutar delete y create también podemos utilizar recreate:
 
 `k -f /opt/course/14/secret-handler-new.yaml replace --force --grace-period=0`
 
-It was not requested directly, but you should always confirm it's working:
+No se pidió directamente, pero siempre hay que confirmar que funciona:
 
 
 `k -n moon exec secret-handler -- env | grep SECRET1 `

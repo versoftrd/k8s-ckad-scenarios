@@ -56,7 +56,11 @@
         },
         {
           "file": "holy-api-pod.yaml",
-          "target": "/opt/course/06/"
+          "target": "/opt/course/"
+        },
+        {
+          "file": "secret-handler.yaml",
+          "target": "/opt/course/"
         }
       ]
     }
