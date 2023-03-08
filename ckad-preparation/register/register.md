@@ -1,6 +1,6 @@
 > Registra tu equipo
 
-Primero vamos a registrar el equipo en este entorno virtual. Ejecuta el siguiente comando para crear un archivo con tu equipo: `vim /opt/course/team/equipo.txt`
+Primero vamos a registrar el equipo en este entorno virtual. Ejecuta el siguiente comando para crear un archivo con tu equipo: `vim /opt/course/team/equipo.txt`{{exec}}
 
 Dentro del editor VIM, presionar la letra `"i"` para entrar en modo `"INSERTAR"`, y proceder a digitar el **nombre del miembro del equipo que voluntariamente será quien compartirá la pantalla y será el digitador durante los ejercicios**. Solo basta con un solo nombre, no hay que mencionar a todos los miembros del equipo.
 
