@@ -1,4 +1,4 @@
-¡Bienvenido(a) a tu examen práctico de Kubernetes preparado para Banco BHD! Estamos emocionados de que estés aquí para demostrar tus habilidades y conocimientos en la gestión de clústeres de Kubernetes. Este examen es una oportunidad para poner en práctica todo lo que has aprendido, y estamos seguros de que lo harás muy bien.
+¡Bienvenido(a) a tu examen práctico de Kubernetes preparado para Banco BHD! Estamos emocionados de que estés aquí para demostrar tus habilidades y conocimientos como desarrollador de servicios contenerizados en Kubernetes. Este examen es una oportunidad para poner en práctica todo lo que has aprendido, y estamos seguros de que lo harás muy bien.
 
 No te preocupes si te encuentras con desafíos difíciles en el camino. Este examen es una oportunidad para aprender y mejorar tus habilidades. ¡Te deseamos mucha suerte y esperamos que disfrutes de la experiencia!
 
@@ -16,6 +16,6 @@ Para saltar preguntas solo debes ejecutar el siguiente comando:
 
 `sh /opt/course/skip.sh pregunta1`
 
-En donde `"pregunta1"` la palabra `"pregunta"` es constante y el número seguido corresponde al número de la pregunta que se puede visualizar en el título de la pregunta en **la parte superior el panel izquierdo.**
+En donde `"pregunta1"` la palabra `"pregunta"` es constante y el número seguido corresponde al número de la pregunta que se puede visualizar en el título en **la parte superior el panel izquierdo.**
 
 Luego presionar el botón "CHECK". Saldrá que la preguntá fue **"Validada"** y mostrará la siguiente pregunta.

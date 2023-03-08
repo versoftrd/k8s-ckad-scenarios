@@ -38,7 +38,7 @@
         },
         {
           "file": "skip.sh",
-          "target": "/opt/course/skip.sh"
+          "target": "/opt/course/"
         }
       ]
     }
