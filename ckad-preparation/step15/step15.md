@@ -1,0 +1,3 @@
+El líder de capítulo tiene un servidor nginx en un deployment llamado "web-moon" en el namespace moon. Alguien comenzó a configurarlo pero nunca se completó. Para completarlo, favor crear un ConfigMap llamado "configmap-web-moon-html" que contiene el contenido del archivo /opt/course/15/web-moon.html bajo el nombre del key-name "índex.html". El deployment "web-moon" ya está configurado para trabajar con este ConfigMap y servir su contenido. Pruebe el escenario utilizando un curl desde un pod temporal con la imagen nginx:alpine
+
+Skip Para saltar ejecutar el comando: sh /opt/course/skip.sh pregunta3{{exec}}
