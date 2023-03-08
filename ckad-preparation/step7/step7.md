@@ -6,3 +6,7 @@ You need to make changes on an existing Pod in Namespace `moon` called `secret-h
 There is existing yaml for another Secret at `/opt/course/secret2.yaml` , create this Secret and mount it inside the same Pod at
 `/tmp/secret2` . Your changes should be saved under `/opt/course/secret-handler-new.yaml` . Both Secrets should only be available in
 Namespace `moon` .
+
+
+> Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
+> `sh /opt/course/skip.sh pregunta1`{{exec}}
