@@ -17,7 +17,7 @@ else
 
   for pod in $pods
   do
-    kubectl -n mercury logs $pod -c logger-con)
+    kubectl -n mercury logs $pod -c logger-con
     echo 'Paso 2'
   done
   echo 'Paso 3'
