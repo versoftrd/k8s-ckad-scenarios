@@ -42,6 +42,13 @@
         "background": "step15/background-init.sh",
         "answer": "step15-answer.md",
         "verify": "step15/verify.sh"
+      },
+      {
+        "title": "Pregunta 16 | Logging Sidecar",
+        "text": "step16/step16.md",
+        "background": "step16/background-init.sh",
+        "answer": "step16-answer.md",
+        "verify": "step16/verify.sh"
       }
     ],
     "intro": {
