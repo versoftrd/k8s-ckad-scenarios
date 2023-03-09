@@ -60,10 +60,10 @@ spec:
 
 A continuación, cree el nuevo despliegue:
 
-` kubectl -f /opt/course/06/holy-api-deployment.yaml create `
+` kubectl apply -f /opt/course/06/holy-api-deployment.yaml `
 
 Por último, elimine el Pod individual:
 
 ` kubectl -n pluto delete pod holy-api --force --grace-period=0 `
 
-`kubectl -n pluto  get pod deployment |  grep holy `
+`kubectl -n pluto  get pod |  grep holy `
