@@ -32,14 +32,17 @@ if [ -f /opt/course/skips/pregunta6.txt ]; then
 else
     if [ "$replica_count" -eq "$expected_replicas" ] && [ "$security_context" = "false" ] ; then
         echo "Ejecución correcta."
-
+        echo "replicas" $replica_count
+        echo "seguridad" $security_context
         # Notificar al server resultado
         archivo=$(cat /opt/course/team/equipo.txt)
         json="{\"team\":\"$archivo\", \"question\":6, \"result\":\"success\"}"
         curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
-
-    fi
-    echo "Error: validar numero de replicas, contexto de seguridad "
+        exit 0
+    else
+    echo "Error: validar numero de replicas, contexto de seguridad "    
+    echo "replicas" $replica_count
+    echo "seguridad" $security_context
         exit 1
-
+    fi
 fi
