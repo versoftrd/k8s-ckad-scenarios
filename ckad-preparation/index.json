@@ -56,13 +56,6 @@
         "background": "step16/background-init.sh",
         "answer": "step16-answer.md",
         "verify": "step16/verify.sh"
-      },
-      {
-        "title": "Pregunta 17 | InitContainer",
-        "text": "step17/step17.md",
-        "background": "step17/background-init.sh",
-        "answer": "step17-answer.md",
-        "verify": "step17/verify.sh"
       }
     ],
     "intro": {
