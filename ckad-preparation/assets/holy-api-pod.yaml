@@ -6,11 +6,6 @@ metadata:
   labels:
     id: holy-api
 spec:
-  template:
-    metadata:
-      labels:
-        id: holy-api
-        name: holy-api
   containers:
   - name: holy-api-container
     image: nginx:1.17.3-alpine
