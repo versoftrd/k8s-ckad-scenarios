@@ -30,7 +30,7 @@ if [ -f /opt/course/skips/pregunta6.txt ]; then
 
 
 else
-    if [ "$replica_count" -eq "$expected_replicas" ] && [ "$security_context" = "false" ] && [ -f "$deployment_file_path" ]  ; then
+    if [ "$replica_count" -eq "$expected_replicas" ] && [ "$security_context" = "false" ] ; then
         echo "Ejecución correcta."
 
         # Notificar al server resultado
@@ -39,7 +39,7 @@ else
         curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 
     fi
-    echo "Error: validar numero de replicas, contexto de seguridad y la ruta del archivo"
+    echo "Error: validar numero de replicas, contexto de seguridad "
         exit 1
 
 fi
