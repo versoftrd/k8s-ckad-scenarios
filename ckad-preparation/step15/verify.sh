@@ -1,8 +1,8 @@
 #!/bin/bash
-if [ -f /opt/course/skips/pregunta15.txt ]; then
+if [ -f /opt/course/skips/pregunta8.txt ]; then
     # Notificar al server resultado
     archivo=$(cat /opt/course/team/equipo.txt)
-    json="{\"team\":\"$archivo\", \"question\":15, \"result\":\"skip\"}"
+    json="{\"team\":\"$archivo\", \"question\":8, \"result\":\"skip\"}"
     curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 else
    kubectl get cm configmap-web-moon-html -n moon
@@ -11,7 +11,7 @@ else
    
    # Notificar al server resultado
    archivo=$(cat /opt/course/team/equipo.txt)
-   json="{\"team\":\"$archivo\", \"question\":15, \"result\":\"success\"}"
+   json="{\"team\":\"$archivo\", \"question\":8, \"result\":\"success\"}"
    curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 fi
 

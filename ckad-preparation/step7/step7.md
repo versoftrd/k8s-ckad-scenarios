@@ -1,12 +1,7 @@
-> Secret, Secret-Volume, Secret-Env
+Necesitas hacer cambios en un Pod existente en el Namespace `moon` llamado `secret-handler`. Crea un nuevo Secret `secret1` que contenga `user=test` y `pass=pwd` . El contenido del Secret debe estar disponible en el Pod `secret-handlers` como variables de entorno `SECRET1_USER` y
+`SECRET1_PASS` . El yaml para Pod está disponible en `/opt/course/07/secret-handler.yaml` .
 
-You need to make changes on an existing Pod in Namespace `moon` called `secret-handler`. Create a new Secret `secret1` which contains `user=test` and `pass=pwd` . The Secret's content should be available in Pod `secret-handlers` as environment variables `SECRET1_USER` and
-`SECRET1_PASS` . The yaml for Pod is available at `/opt/course/secret-handler.yaml` .
-
-There is existing yaml for another Secret at `/opt/course/secret2.yaml` , create this Secret and mount it inside the same Pod at
-`/tmp/secret2` . Your changes should be saved under `/opt/course/secret-handler-new.yaml` . Both Secrets should only be available in
-Namespace `moon` .
-
+Existe yaml para otro Secret en `/opt/course/07/secret2.yaml` , cree este Secret y móntelo dentro del mismo Pod en `tmp/secret2` . Los cambios se guardarán en `/opt/course/07/secret-handler-new.yaml` . Ambos Secrets sólo deberían estar disponibles en espacio de nombres `moon` .
 
 > Para saltar la pregunta dar click al siguiente comando y luego presione el botón CHECK:
-> `sh /opt/course/skip.sh pregunta1`{{exec}}
+> `sh /opt/course/skip.sh pregunta7`{{exec}}
