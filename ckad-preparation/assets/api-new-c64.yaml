@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-new-c32
-  namespace: neptune
-  labels:
-    app: api-new-c32
+  name: api-new-c32
+  namespace: neptune
+  labels:
+    app: api-new-c32
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: api-new-c32
-  template:
-    metadata:
-      labels:
-        app: api-new-c32
-    spec:
-      containers:
-      - name: api-new-c32
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
-      - name: api-new-c64
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-new-c32
+  template:
+    metadata:
+      labels:
+        app: api-new-c32
+    spec:
+      containers:
+      - name: api-new-c32
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+      - name: api-new-c64
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
