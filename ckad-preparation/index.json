@@ -123,6 +123,18 @@
         {
           "file": "test-init-container.yaml",
           "target": "/opt/course/"
+        },
+        {
+          "file": "api-new-c32.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "api-new-c64.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "api-new-c64-error.yaml",
+          "target": "/opt/course/"
         }
       ]
     }
