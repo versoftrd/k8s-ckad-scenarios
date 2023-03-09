@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: e-commerce
+  annotations:
+    description: this is the server for the E-Commerce System my-happy-shop
+  labels:
+    app: my-happy-shop
+  namespace: saturn
+spec:
+  containers:
+  - name: e-commerce
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: e-comerce
+  annotations:
+    description: this is the server for the E-Commerce System my-happy-shoping
+  labels:
+    app: my-happy-shoping
+  namespace: saturn
+spec:
+  containers:
+  - name: e-comerce
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ecomerce
+  annotations:
+    description: this is the server for the E-Commerce System my-happy-shop
+  labels:
+    app: my-happy-shop-commerce
+  namespace: saturn
+spec:
+  containers:
+  - name: ecomerce
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
