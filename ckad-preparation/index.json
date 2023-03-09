@@ -91,14 +91,6 @@
         {
           "file": "cleaner.yaml",
           "target": "/opt/course/"
-        },
-        {
-          "file": "verify16.sh",
-          "target": "/opt/course/"
-        },
-        {
-          "file": "cleaner_new.yaml",
-          "target": "/opt/course/"
         }
       ]
     }
