@@ -135,6 +135,10 @@
         {
           "file": "api-new-c64-error.yaml",
           "target": "/opt/course/"
+        },
+        {
+          "file": "my-happy-shop.yaml",
+          "target": "/opt/course/"
         }
       ]
     }
