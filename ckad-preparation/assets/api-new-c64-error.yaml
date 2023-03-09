@@ -26,7 +26,7 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
-      - name: api-new-c64-error
-        image: mynginx:1.14.2
+      - name: api-new-128
+        image: busybox:1.31.0
         ports:
         - containerPort: 80
