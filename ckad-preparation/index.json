@@ -35,7 +35,21 @@
         "background": "step7/background-init.sh",
         "answer": "step7-answer.md",
         "verify": "step7/verify.sh"
-      }     
+      },
+      {
+        "title": "Pregunta 15 | ConfigMap, Configmap-Volume",
+        "text": "step15/step15.md",
+        "background": "step15/background-init.sh",
+        "answer": "step15-answer.md",
+        "verify": "step15/verify.sh"
+      },
+      {
+        "title": "Pregunta 16 | Logging Sidecar",
+        "text": "step16/step16.md",
+        "background": "step16/background-init.sh",
+        "answer": "step16-answer.md",
+        "verify": "step16/verify.sh"
+      }
     ],
     "intro": {
       "text": "intro.md",
@@ -60,6 +74,18 @@
         },
         {
           "file": "secret-handler.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "web-moon.html",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "webmoon.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "cleaner.yaml",
           "target": "/opt/course/"
         }
       ]
