@@ -25,7 +25,7 @@
       },
       {
         "title": "Pregunta3 | Readiness",
-        "text": "step3/step2.md",
+        "text": "step3/step3.md",
         "answer": "step3-answer.md",
         "verify": "step3/verify.sh"
       },
