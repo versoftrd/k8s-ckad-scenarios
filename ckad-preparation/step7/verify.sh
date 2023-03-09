@@ -1,6 +1,9 @@
 #!/bin/bash
 
-
+# Namespace a validar
+ns="moon"
+# Secreto a validar
+secret1="secret1"
 
 if [ -f /opt/course/skips/pregunta7.txt ]; then
     echo "Ejecución correcta."
@@ -9,10 +12,10 @@ if [ -f /opt/course/skips/pregunta7.txt ]; then
     json="{\"team\":\"$archivo\", \"question\":7, \"result\":\"skip\"}"
     curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 else
-    kubectl -n moon exec secret-handler -- env | grep SECRET1
-    kubectl -n moon exec secret-handler -- find /tmp/secret2
-    kubectl -n moon exec secret-handler -- cat /tmp/secret2/key
-    # sh /opt/course/2/pod1-status-command.sh;
+    if ! kubectl get secret "$secret1" -n "$ns" >/dev/null 2>&1 ; then
+    echo "El secreto $secret1 no existe en el namespace $ns"
+    exit 1
+    fi
 
     # Notificar al server resultado
     archivo=$(cat /opt/course/team/equipo.txt)

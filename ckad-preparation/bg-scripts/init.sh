@@ -4,6 +4,7 @@
 mkdir -p /opt/course/team/
 mkdir -p /opt/course/skips/
 mkdir -p /opt/course/06/
+mkdir -p /opt/course/07/
 
 # Crear namespaces
 kubectl create namespace mbp

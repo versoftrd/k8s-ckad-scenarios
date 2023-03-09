@@ -77,6 +77,10 @@
           "target": "/opt/course/"
         },
         {
+          "file": "secret2.yaml",
+          "target": "/opt/course/"
+        },
+        {
           "file": "web-moon.html",
           "target": "/opt/course/"
         },
