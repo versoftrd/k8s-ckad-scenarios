@@ -25,7 +25,7 @@ data:
 
 A continuación creamos el segundo Secret desde la ubicación dada, asegurándonos de que se creará en el Namespace `moon
 
-` kubectl apply -n moon -f /opt/course/07/secret2.yaml create`
+` kubectl apply -n moon -f /opt/course/07/secret2.yaml`
 
 Ahora editaremos el Pod yaml
 
