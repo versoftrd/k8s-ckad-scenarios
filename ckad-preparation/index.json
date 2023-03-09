@@ -12,6 +12,7 @@
       {
         "title": "Pregunta1 | Namespaces",
         "text": "step1/step1.md",
+        "background": "step1/background-init.sh",
         "answer": "step1-answer.md",
         "verify": "step1/verify.sh"
       },
@@ -21,6 +22,12 @@
         "background": "step2/background-init.sh",
         "answer": "step2-answer.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Pregunta3 | Readiness",
+        "text": "step3/step2.md",
+        "answer": "step3-answer.md",
+        "verify": "step3/verify.sh"
       },
       {
         "title": "Pregunta6 | Pods",
@@ -35,7 +42,28 @@
         "background": "step7/background-init.sh",
         "answer": "step7-answer.md",
         "verify": "step7/verify.sh"
-      }     
+      },
+      {
+        "title": "Pregunta 15 | ConfigMap, Configmap-Volume",
+        "text": "step15/step15.md",
+        "background": "step15/background-init.sh",
+        "answer": "step15-answer.md",
+        "verify": "step15/verify.sh"
+      },
+      {
+        "title": "Pregunta 16 | Logging Sidecar",
+        "text": "step16/step16.md",
+        "background": "step16/background-init.sh",
+        "answer": "step16-answer.md",
+        "verify": "step16/verify.sh"
+      },
+      {
+        "title": "Pregunta 17 | InitContainer",
+        "text": "step17/step17.md",
+        "background": "step17/background-init.sh",
+        "answer": "step17-answer.md",
+        "verify": "step17/verify.sh"
+      }
     ],
     "intro": {
       "text": "intro.md",
@@ -52,6 +80,34 @@
         },
         {
           "file": "skip.sh",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "holy-api-pod.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "secret-handler.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "secret2.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "web-moon.html",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "webmoon.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "cleaner.yaml",
+          "target": "/opt/course/"
+        },
+        {
+          "file": "test-init-container.yaml",
           "target": "/opt/course/"
         }
       ]

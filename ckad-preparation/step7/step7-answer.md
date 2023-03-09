@@ -1,14 +1,14 @@
 Answer
 
 ```
-k -n moon get pod # show pods
-k -n moon create secret -h # help
-k -n moon create secret generic -h # help
-k -n moon create secret generic secret1 --from-literal user=test --from-literal pass=pwd
+kubectl -n moon get pod # show pods
+kubectl -n moon create secret -h # help
+kubectl -n moon create secret generic -h # help
+kubectl -n moon create secret generic secret1 --from-literal user=test --from-literal pass=pwd
 
 ```
 
-The last command would generate this yaml:
+El último comando generaría este yaml:
 
 ```yaml
 apiVersion: v1 
@@ -23,25 +23,25 @@ data:
 
 ```
 
-Next we create the second Secret from the given location, making sure it'll be created in Namespace `moon`
+A continuación creamos el segundo Secret desde la ubicación dada, asegurándonos de que se creará en el Namespace `moon
 
-` kubectl -n moon -f /opt/course/secret2.yaml create`
+` kubectl apply -n moon -f /opt/course/07/secret2.yaml create`
 
-We will now edit the Pod yaml
+Ahora editaremos el Pod yaml
 
 ```
-cp /opt/course/secret-handler.yaml /opt/course/secret-handler-new.yaml
-vim /opt/course/secret-handler-new.yaml
+cp /opt/course/07/secret-handler.yaml /opt/course/07/secret-handler-new.yaml
+vim /opt/course/07secret-handler-new.yaml
 ```
 
-Add the following to the yaml:
+Añade lo siguiente al yaml:
 
 ```yaml
 
 apiVersion: v1 
 kind: Pod 
 metadata:
-  labels:
+  labels: 
     id: secret-handler
     uuid: 1428721e-8d1c-4c09-b5d6-afd79200c56a 
     red_ident: 9cf7a7c0-fdb2-4c35-9c13-c2a0bb52b4a9 
@@ -92,7 +92,7 @@ spec:
 ```
 
 
-There is also the possibility to import all keys from a Secret as env variables at once, though the env variable names will then be the same as in the Secret, which doesn't work for the requirements here:
+También existe la posibilidad de importar todas las claves de un Secreto como variables env a la vez, aunque los nombres de las variables env serán entonces los mismos que en el Secreto, lo que no funciona para los requisitos aquí planteados:
 
 ```yaml
     containers:
@@ -103,21 +103,8 @@ There is also the possibility to import all keys from a Secret as env variables 
         name: secret1
 ```
 
-Then we apply the changes:
+A continuación, aplicamos los cambios:
 ```
-k -f /opt/course/secret-handler.yaml delete --force --grace-period=0
-k -f /opt/course/secret-handler-new.yaml create
+kubectl delete pod secret-handler -n moon --force --grace-period=0
+kubectl apply -f /opt/course/07/secret-handler-new.yaml
 ```
-
-Instead of running delete and create we can also use recreate:
-
-`k -f /opt/course/14/secret-handler-new.yaml replace --force --grace-period=0`
-
-It was not requested directly, but you should always confirm it's working:
-
-
-`k -n moon exec secret-handler -- env | grep SECRET1 `
-
-`k -n moon exec secret-handler -- find /tmp/secret2`
-
-`k -n moon exec secret-handler -- cat /tmp/secret2/key `
