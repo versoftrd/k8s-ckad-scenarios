@@ -1,4 +1,5 @@
 #!/bin/bash
+echo 'se ejecuto el script'
 if [ -f /opt/course/skips/pregunta16.txt ]; then
     echo 'La pregunta fue skipeada'
     # Notificar al server resultado
