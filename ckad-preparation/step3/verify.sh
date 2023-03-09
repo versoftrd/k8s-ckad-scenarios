@@ -16,14 +16,14 @@ else
     if [ $? -eq 0 ]; then
         echo "Todos los comandos se ejecutaron con éxito"
         exit 0 # código de salida 0 indica éxito
+        
+        # Notificar al server resultado
+        archivo=$(cat /opt/course/team/equipo.txt)
+        json="{\"team\":\"$archivo\", \"question\":2, \"result\":\"success\"}"
+        curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
     else
         echo "Al menos un comando falló"
         exit 1 # código de salida diferente de 0 indica fallo
     fi
-
-    # Notificar al server resultado
-    archivo=$(cat /opt/course/team/equipo.txt)
-    json="{\"team\":\"$archivo\", \"question\":2, \"result\":\"success\"}"
-    curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 fi
 

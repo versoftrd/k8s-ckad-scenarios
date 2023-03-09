@@ -5,4 +5,4 @@ El YAML para la implementaci&oacute;n existente est&aacute; disponible en "/opt/
 Compruebe si los registros del nuevo contenedor revelan algo sobre los incidentes de datos faltantes.
 
 > Para saltar la pregunta dar click al siguiente comando y luego presione el bot&oacute;n CHECK:
-> `sh /opt/course/skip.sh pregunta16`{{exec}}
+> `sh /opt/course/skip.sh pregunta9`{{exec}}

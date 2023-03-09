@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ -f /opt/course/skips/pregunta17.txt ]; then
+if [ -f /opt/course/skips/pregunta10.txt ]; then
     # Notificar al server resultado
     archivo=$(cat /opt/course/team/equipo.txt)
-    json="{\"team\":\"$archivo\", \"question\":17, \"result\":\"skip\"}"
+    json="{\"team\":\"$archivo\", \"question\":10, \"result\":\"skip\"}"
     curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 else
   podname=$(kubectl get pods -n mars | grep test-init-container | awk '{print $1}')
@@ -23,6 +23,6 @@ else
   
   # Notificar al server resultado
   archivo=$(cat /opt/course/team/equipo.txt)
-  json="{\"team\":\"$archivo\", \"question\":17, \"result\":\"success\"}"
+  json="{\"team\":\"$archivo\", \"question\":10, \"result\":\"success\"}"
   curl -X POST -H "Content-Type: application/json" -d "$json" https://api-dev.bhd.com.do/killer-coda/result >/dev/null 2>&1 &
 fi

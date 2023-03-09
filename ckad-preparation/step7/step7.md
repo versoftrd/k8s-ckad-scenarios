@@ -1,5 +1,3 @@
-> Secret, Secret-Volume, Secret-Env
-
 Necesitas hacer cambios en un Pod existente en el Namespace `moon` llamado `secret-handler`. Crea un nuevo Secret `secret1` que contenga `user=test` y `pass=pwd` . El contenido del Secret debe estar disponible en el Pod `secret-handlers` como variables de entorno `SECRET1_USER` y
 `SECRET1_PASS` . El yaml para Pod está disponible en `/opt/course/07/secret-handler.yaml` .
 
