@@ -22,11 +22,11 @@ spec:
         command: ['bash','-c','echo init > /var/log/cleaner/cleaner.log']
         volumeMounts:
         - name: logs
-          mountPath: /var/log/cleaner
+          mountPath: '/var/log/cleaner'
      containers:
      - name: cleaner-con
        image: bash:5.0.11
        args: ['bash','-c','while true; do echo `date`: "remove random file" >> /var/log/cleaner/cleaner.log; sleep 1; done']
        volumeMounts:
        - name: logs
-         mountPath: /var/log/cleaner
+         mountPath: '/var/log/cleaner'
