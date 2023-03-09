@@ -137,7 +137,7 @@
           "target": "/opt/course/"
         },
         {
-          "file": "my-happy-shop.yaml",
+          "file": "my-happy-shop.yml",
           "target": "/opt/course/"
         }
       ]
